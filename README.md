@@ -24,6 +24,8 @@ oldpeak: ST segment (心臟早期的再極化) 由運動所導致的改變(相�
 
 target: 確診心臟病與否
 
+<br>
+
 ### 分析與說明
 #### 年齡與性別：
 
@@ -37,6 +39,8 @@ target: 確診心臟病與否
 
 舉例來說，兩群資料在血壓高低方面可能沒有明顯差異，但使用年齡normalize後，可能就能看到不同。
 
+<br>
+
 #### trestbps等因素與心臟病的關聯：
 
 接下來，我將age、trestbps、chol、thalach、oldpeak等數據型數據，與有心臟餅與否做Heatmap分析。
@@ -45,12 +49,17 @@ target: 確診心臟病與否
 由所得的heat map可以看出thalach(最大心律)有較明顯的正相關，而oldpeak(心臟早期的再極化)有較明顯的負相關。
 此外也可以看到age與trestbps、chol、thalach、oldpeak都有一定程度的相關性。這代表著，這些數據若能經過年齡的normalize，會比較好進行後續的分析。
 
+<br>
+
 #### 用BoxPlot分析Heart Disease(HD) positive or negative的組成：
 
 在這裡將HD positive及negative在age、trestbps、chol、thalach、oldpeak等數據的組成，利用boxplot作分析。
 可以看到兩組的數據outlier都有不少(在這樣的數據數之下)，也因此，除了前述normalize的處理，也還需進一步檢視outlier，才能進行分析。
 
+<br>
+
 ### 結論
 
-這個dataset的數據，若要進行有效的分析，還須更多更進一步的數據處理
+這個dataset的數據，若要進行有效的分析，還須更多更進一步的數據處理。
+而若要直接拿來做training可能會由於bias的因素，得到較奇怪的結果，或是不易做不出較佳的結果。
 
