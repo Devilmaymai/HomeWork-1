@@ -2,7 +2,7 @@
 
 ## Part2:
 
-database: https://www.kaggle.com/ronitf/heart-disease-uci 
+dataset: https://www.kaggle.com/ronitf/heart-disease-uci 
 
 連結中的data總共有14個屬性。
 
@@ -34,4 +34,23 @@ target: 確診心臟病與否
 因此，這兩的因子在training上或許能當不錯的決策點。
 
 但在實際上的臨床分析方面，則代表著後續在分析心臟病與沒有心臟病的資料時，可能需要將會受這兩個因素影響的資料做一點修正，才能避免bias的情形。
+
+舉例來說，兩群資料在血壓高低方面可能沒有明顯差異，但使用年齡normalize後，可能就能看到不同。
+
+#### trestbps等因素與心臟病的關聯：
+
+接下來，我將age、trestbps、chol、thalach、oldpeak等數據型數據，與有心臟餅與否做Heatmap分析。
+在這裡我把Heart disease的positive (target = 1) 或 negative (target = 0)當作一的陽春的線性數據。
+
+由所得的heat map可以看出thalach(最大心律)有較明顯的正相關，而oldpeak(心臟早期的再極化)有較明顯的負相關。
+此外也可以看到age與trestbps、chol、thalach、oldpeak都有一定程度的相關性。這代表著，這些數據若能經過年齡的normalize，會比較好進行後續的分析。
+
+#### 用BoxPlot分析Heart Disease(HD) positive or negative的組成：
+
+在這裡將HD positive及negative在age、trestbps、chol、thalach、oldpeak等數據的組成，利用boxplot作分析。
+可以看到兩組的數據outlier都有不少(在這樣的數據數之下)，也因此，除了前述normalize的處理，也還需進一步檢視outlier，才能進行分析。
+
+### 結論
+
+這個dataset的數據，若要進行有效的分析，還須更多更進一步的數據處理
 
