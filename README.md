@@ -1,5 +1,27 @@
 # HomeWork-1
 
+## Part1:
+
+### 1:
+
+![](https://imgur.com/uz8fdX9.png)
+
+### 2:
+
+![](https://imgur.com/MX5byNC.png)
+
+### 3:
+
+![](https://imgur.com/bzWh3m5.png)
+
+### 4:
+
+![](https://imgur.com/VbZNV58.png)
+
+### 5:
+
+![](https://imgur.com/cbSbNqk.png)
+
 ## Part2:
 
 dataset: https://www.kaggle.com/ronitf/heart-disease-uci 
